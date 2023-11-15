@@ -1,0 +1,28 @@
+Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,19837.5,238050,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),RDS for MySQL,Amazon RDS for MySQL,0,6224.08,74688.96,USD,,"Storage for each RDS instance (General Purpose SSD (gp3)), Storage amount (5 TB), Quantity (2), Instance type (db.m4.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1000 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50), General Purpose SSD (gp3) - IOPS (64000), General Purpose SSD (gp3) - Throughput (4000 MiBps)"
+My Estimate,US East (N. Virginia),Amazon EC2 Web,Amazon EC2 ,0,1858.916,22306.99,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (t3.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Amazon EC2 Application,Amazon EC2 ,0,406.8,4881.6,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (c5.large), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),Application Load Balancer,Application Load Balancer,0,5872.85,70474.2,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,420.05,5040.6,USD,,"Data transfer out to internet (4000 GB per month), Data transfer out to origin (4000 GB per month), Number of requests (HTTPS) (50000 per month)"
+My Estimate,US East (N. Virginia),Route 53,Amazon Route 53,0,1913.5,22962,USD,,"Hosted Zones (2), Number of Elastic Network Interfaces (10), Number of domains stored (1)"
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,115,1380,USD,,S3 Standard storage (5000 GB per month)
+My Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,263.25,3159,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),VPC,Gateway Load Balancer,0,2763.05,33156.6,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (500 GB per hour), Average number of new connections/flows (50000 per second), Average connection/flow duration (1 seconds)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Change budget,,,,,,,,,
+ - Increase the Number of Elastic Network Interfaces in Route 53 Resolver,,,,,,,,,
+ - Increased EC2 scaling and EC2 pricing strategy changed from on-demand instances to paid-monthly instances,,,,,,,,,
+ - increase the Average number of rule evaluations per request and Processed bytes (Lambda functions as targets),,,,,,,,,
+" - Increase the amount of Data transfer out to internet, Data transfer out to origin",,,,,,,,,
+ - Increase the Number of Elastic Network Interfaces on Route 53 Resolver,,,,,,,,,
+" - Increase the amount of Storage amount
+MySQL",,,,,,,,,

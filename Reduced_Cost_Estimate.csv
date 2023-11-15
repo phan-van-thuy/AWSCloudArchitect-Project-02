@@ -1,0 +1,24 @@
+Estimate summary									
+Upfront cost	Monthly cost	Total 12 months cost	Currency						
+0	6307.73	75692.76	USD						
+		* Includes upfront cost							
+									
+									
+Detailed Estimate									
+Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Status	Configuration summary
+My Estimate	US East (N. Virginia)	RDS for MySQL	Amazon RDS for MySQL	0	1779.92	21359.04	USD		"Storage for each RDS instance (General Purpose SSD (gp3)), Storage amount (1 TB), Quantity (2), Instance type (db.m4.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB), Total Size of Backup Processed for Export (GB) (1000 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50), General Purpose SSD (gp3) - IOPS (12000), General Purpose SSD (gp3) - Throughput (1000 MiBps)"
+My Estimate	US East (N. Virginia)	Amazon EC2 Web	Amazon EC2 	0	32.76	393.12	USD		"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 3), Advance EC2 instance (t3.large), Pricing strategy (On-Demand Utilization: 100 Hours/Month), Enable monitoring (enabled), DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate	US East (N. Virginia)	Amazon EC2 Application	Amazon EC2 	0	233.3	2799.6	USD		"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 3), Advance EC2 instance (c5.large), Pricing strategy (On-Demand Utilization: 100 Hours/Month), Enable monitoring (enabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate	US East (N. Virginia)	Application Load Balancer	Application Load Balancer	0	1200.85	14410.2	USD		Number of Application Load Balancers (2)
+My Estimate	US East (N. Virginia)	CloudFront	Amazon CloudFront	0	105.05	1260.6	USD		"Data transfer out to internet (1000 GB per month), Data transfer out to origin (1000 GB per month), Number of requests (HTTPS) (50000 per month)"
+My Estimate	US East (N. Virginia)	Route 53	Amazon Route 53	0	1274.75	15297	USD		"Hosted Zones (2), Number of Elastic Network Interfaces (3), Number of domains stored (1)"
+My Estimate	US East (N. Virginia)	S3	S3 Standard	0	23.55	282.6	USD		S3 Standard storage (1 TB per month)
+My Estimate	US East (N. Virginia)	VPC	Network Address Translation (NAT) Gateway	0	263.25	3159	USD		Number of NAT Gateways (1)
+My Estimate	US East (N. Virginia)	VPC	Gateway Load Balancer	0	1394.3	16731.6	USD		"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (250 GB per hour), Average number of new connections/flows (25000 per second), Average connection/flow duration (1 seconds)"
+									
+									
+									
+"Changes budget																		"									
+" - Reduce the amount of EC2 scaling, and EC2 pricing strategy changed from on-demand to 1-year prepaid reserved instances for both web and application servers.																		"									
+" - Reduce the average number of rule evaluations per request about Elastic Load Balancing																		"									
+" - Reduce the average number of elastic network interfaces on Route 53																		"									
